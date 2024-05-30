@@ -11,13 +11,13 @@ jobs:
   # só teremos um job: "Rodar os testes"
   cypress-run:
     # maquina que será executado
-    runs-on: ubuntu-latest
+    runs-on:
 
     # passo a passo para rodar os testes
     steps:
         # Clone do Projeto
       - name: checkout/Clone do projeto
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
         # exemplo de execução no Terminal
       - name: instalar depedencias do projeto 
@@ -25,7 +25,7 @@ jobs:
 
         # Execução e config do projeto
       - name: Run testes
-        uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v5
         with:
           record: true
         env:  
