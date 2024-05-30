@@ -11,7 +11,7 @@ jobs:
   # só teremos um job: "Rodar os testes"
   cypress-run:
     # maquina que será executado
-    runs-on:
+    runs-on: ubuntu-latest
 
     # passo a passo para rodar os testes
     steps:
