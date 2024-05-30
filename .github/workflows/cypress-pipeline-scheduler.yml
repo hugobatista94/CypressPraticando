@@ -1,10 +1,10 @@
 # Nome da pipeline
-name: Run Basic Testes
+name: Run Basic Testes -scheduler
 
 # em que momento será executada
 on:
-  pull_request:
-    branches: [master]
+  schedule:
+   - cron: '0 20,22,23 * * 1-5'
 
 jobs:
   # jobs=> o que vai sev feito nessa pipeline
