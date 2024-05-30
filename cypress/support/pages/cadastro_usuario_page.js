@@ -38,7 +38,7 @@ export default {
         }, 
 
         preenchePassword(password) {
-            cy.get('#password')
+            cy.get('#passwordx')
                .type(password)
         },
 
